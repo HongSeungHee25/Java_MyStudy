@@ -1,0 +1,13 @@
+package Synchronization;
+
+public class MyThread implements Runnable{
+
+	Sopa sopa;
+
+	public MyThread(Sopa sopa) {
+		super();
+		this.sopa = sopa;
+	}
+	@Override
+	public void run() {
+		//5踰

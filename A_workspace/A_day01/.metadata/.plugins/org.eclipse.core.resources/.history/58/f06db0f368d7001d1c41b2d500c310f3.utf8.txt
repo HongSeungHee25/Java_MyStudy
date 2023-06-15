@@ -1,0 +1,11 @@
+package day05;
+
+import java.util.Scanner;
+
+public class Review {
+
+	public static void main(String[] args) {
+		
+		//占실쏙옙1
+		
+		//占쏙옙占쏙옙悶占쏙옙占

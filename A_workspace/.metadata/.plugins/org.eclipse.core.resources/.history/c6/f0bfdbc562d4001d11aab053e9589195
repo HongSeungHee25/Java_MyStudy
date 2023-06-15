@@ -1,0 +1,26 @@
+package set;
+
+import java.util.HashSet;
+
+public class HashSetTest {
+
+	public static void main(String[] args) {
+
+		HashSet<String> category = new HashSet<>();
+		
+		//추가
+		//중복된 값은 추가되지 않는다
+		category.add("스릴러");
+		category.add("로맨스");
+		category.add("스릴러");
+		category.add("스릴러");
+		category.add("스릴러");
+		
+		System.out.println(category);
+		
+		//삭제
+		category.remove("스릴러");
+		System.out.println(category);
+	}
+
+}

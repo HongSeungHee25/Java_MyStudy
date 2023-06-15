@@ -1,0 +1,23 @@
+package list;
+
+import java.util.ArrayList;
+
+public class ArrayListTest2 {
+
+	public static void main(String[] args) {
+		
+		//import후에 사용한다
+		ArrayList<Pet> ar = new ArrayList<>();
+		
+		Pet pet1 = new Pet("바둑이", "갈색");
+		Pet pet2 = new Pet("멍멍이", "검은색");
+		Pet pet3 = new Pet("냐옹이", "흰색");
+		
+		ar.add(pet1);
+		ar.add(pet2);
+		ar.add(pet3);
+		
+		System.out.println(ar);
+	}
+
+}

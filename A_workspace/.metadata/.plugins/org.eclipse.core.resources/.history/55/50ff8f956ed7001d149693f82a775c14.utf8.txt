@@ -1,0 +1,5 @@
+package inheritance;
+
+//占싸몌옙 클占쏙옙占쏙옙
+public class Car {
+	//

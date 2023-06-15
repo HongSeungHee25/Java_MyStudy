@@ -1,0 +1,25 @@
+package wrapper;
+
+public class WrapperTest {
+
+	public static void main(String[] args) {
+		
+		//boxing
+		
+		Integer num = new  Integer(3);
+		Integer num2 = Integer.valueOf(3);
+		Double doubleVar = Double.valueOf(3.0);
+		Boolean bool = Boolean.valueOf(false);
+		
+		System.out.println(num);
+		System.out.println(num2);
+		System.out.println(doubleVar);
+		System.out.println(bool);
+		
+		
+		
+		
+		
+	}
+
+}

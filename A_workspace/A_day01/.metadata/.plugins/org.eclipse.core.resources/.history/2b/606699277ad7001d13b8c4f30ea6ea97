@@ -1,0 +1,31 @@
+package anonymous;
+
+public class AnonymousTest {
+
+	public static void main(String[] args) {
+
+		//클래스명 객체명 = new 클래스명();
+		//익명 클래스의 객체 주소값을 부모타입의 변수
+		//interA에 담는다
+		InterA interA = new InterA() {
+			@Override
+			public void printData() {
+				System.out.println("익명클래스로 구현된 메서드");
+			}
+		};
+		
+		//부모타입 interA 변수를 통해 printData()
+		//메서드를 호출한다
+		interA.printData();
+		
+		InterA interA2 = new InterA() {
+			@Override
+			public void printData() {
+				System.out.println("hello");
+			}
+		};
+		
+		interA2.printData();
+	}
+
+}

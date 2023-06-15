@@ -1,0 +1,19 @@
+package anonymous;
+
+public class AnonymousTest {
+
+	public static void main(String[] args) {
+
+		//클래스명 객체명 = new 클래스명();
+		
+		InterA interA = new InterA() {
+			@Override
+			public void printData() {
+				System.out.println("익명클래스로 구현된 메서드");
+			}
+		};
+		
+		interA.printData();
+	}
+
+}

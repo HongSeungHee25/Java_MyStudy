@@ -1,0 +1,21 @@
+package map;
+
+import java.util.HashMap;
+
+public class HashMapTest {
+
+	public static void main(String[] args) {
+		
+		//Key의 자료형 : String, Value의 자료형 : Integer
+		HashMap<String, Integer> mart = new HashMap<>();
+		
+		//추가
+		mart.put("새우깡", 1300);
+		mart.put("감자깡", 1500);
+		mart.put("포카칩", 2000);
+		mart.put("스윙칩", 1700);
+		
+		System.out.println(mart);
+	}
+
+}

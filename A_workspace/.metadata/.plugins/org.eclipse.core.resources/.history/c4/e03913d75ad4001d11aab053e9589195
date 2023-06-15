@@ -1,0 +1,15 @@
+package list;
+
+public class Pet {
+
+	String name;
+	String color;
+	
+	public Pet(String name, String color) {
+		super();
+		this.name = name;
+		this.color = color;
+	}
+	
+	
+}

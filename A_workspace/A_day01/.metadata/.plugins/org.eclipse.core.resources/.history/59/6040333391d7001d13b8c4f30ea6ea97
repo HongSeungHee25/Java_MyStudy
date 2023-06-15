@@ -1,0 +1,28 @@
+package Synchronization;
+
+public class MyThread implements Runnable{
+
+	Sopa sopa;
+
+	public MyThread(Sopa sopa) {
+		super();
+		this.sopa = sopa;
+	}
+	@Override
+	public void run() {
+		//5번 동안 소파를 1개씩 구매한다
+		for(int i = 0; i < 5; i++) {
+			buy();
+		}
+	}
+//	void buy() {
+//		this.sopa.num--;
+//		System.out.println("현재 재고 = "+this.sopa.num);
+//	}
+//	
+	//메서드 동기화
+	synchronized void buy() {
+		this.sopa.num--;
+		System.out.println("현재 재고 = "+this.sopa.num);
+	}
+}

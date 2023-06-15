@@ -1,0 +1,9 @@
+package map;
+
+import java.util.HashMap;
+
+public class HashMapTest2 {
+
+	public static void main(String[] args) {
+
+		//key : 

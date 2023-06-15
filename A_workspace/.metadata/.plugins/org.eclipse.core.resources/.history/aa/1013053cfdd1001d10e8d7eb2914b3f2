@@ -1,0 +1,22 @@
+package exceptionTest;
+
+public class ExceptionTest4 {
+
+	public static void main(String[] args) {
+
+		//throw : 예외 발생시키기
+		
+		int num = 0;
+		
+		//위의 코드는 아래의 예외 상황이 발생할수 있는 코드가 아님에도 
+		//불구하고 예외 상황이 발생한다
+		
+		//throw new 예외클래스명();
+		throw new NegativeArraySizeException();
+		
+	
+	
+	
+	}
+
+}

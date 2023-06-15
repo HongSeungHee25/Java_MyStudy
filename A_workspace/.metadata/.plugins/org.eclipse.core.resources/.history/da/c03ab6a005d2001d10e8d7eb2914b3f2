@@ -1,0 +1,14 @@
+package object;
+
+public class HachCodeTest {
+
+	public static void main(String[] args) {
+
+		User user = new User();
+		OldUser olduser = new OldUser();
+		
+		System.out.println(user.hashCode());
+		System.out.println(olduser.hashCode());
+	}
+
+}

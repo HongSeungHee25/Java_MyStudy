@@ -1,0 +1,31 @@
+package list;
+
+public class Generic<T> {
+	
+	T data;
+	
+	public static void main(String[] args) {
+		
+		Generic<Integer> generic = new Generic<>();
+		System.out.println(generic.data);
+		
+		Generic<Boolean>generic2 = new Generic<>();
+		System.out.println(generic2.data);
+		
+		generic.data = 10;
+		System.out.println(generic.data);
+		
+//		generic.data = true;
+		
+		generic2.data = true;
+		System.out.println(generic2.data);
+		
+		Generic<Pet> generic3 = new Generic<>();
+		
+		System.out.println(generic3.data);
+		
+		generic3.data.name = "바둑이";
+		System.out.println(generic3);
+	}
+	
+}

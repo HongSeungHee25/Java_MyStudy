@@ -1,0 +1,18 @@
+package object;
+
+public class EqualsTest {
+
+	public static void main(String[] args) {
+
+		System.out.println("A"=="A");
+		System.out.println("A".equals("A"));
+		
+		OldUser olduser1 = new OldUser("min","min1234");
+		OldUser olduser2 = new OldUser("min","min1234");
+		
+		System.out.println(olduser1 == olduser2);
+		System.out.println(olduser1.equals(olduser2));
+		
+	}
+
+}

@@ -1,0 +1,18 @@
+package list;
+
+import java.util.ArrayList;
+
+public class ArrayListTest {
+
+	public static void main(String[] args) {
+		
+		ArrayList<Integer>ar = new ArrayList<Integer>();
+		
+		ArrayList<Integer>ar2 = new ArrayList<>();
+		
+		System.out.println(ar);
+		System.out.println(ar.toString());
+		
+	}
+
+}

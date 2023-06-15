@@ -1,0 +1,35 @@
+package inheritance;
+
+//�θ� Ŭ����
+public class Car {
+	//안녕하세요 
+	//field
+	
+	int seats;
+	String color;
+	String brand;
+	boolean isSuv;
+	
+	//�ʵ带 �̿��� ������ �ڵ��ϼ� ����Ű alt + shift + s + o
+	
+	public Car(int seats, String color, String brand, boolean isSuv) {
+		super(); //object Ŭ������ �����ڸ� ȣ���Ѵ�
+		this.seats = seats;
+		this.color = color;
+		this.brand = brand;
+		this.isSuv = isSuv;
+		System.out.println("�θ�Ŭ���� ������1 ȣ��!");
+	}
+	
+	public Car() {
+		super();
+	}
+
+	//method
+	void turnOn() {
+		System.out.println("�õ��� ŵ�ϴ�");
+	}
+	void turnOff() {
+		System.out.println("�õ��� ���ϴ�");
+	}
+}

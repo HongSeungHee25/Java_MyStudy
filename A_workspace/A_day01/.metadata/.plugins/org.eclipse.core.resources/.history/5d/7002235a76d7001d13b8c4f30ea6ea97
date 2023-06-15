@@ -1,0 +1,22 @@
+package map;
+
+import java.util.HashMap;
+
+public class HashMapTest2 {
+
+	public static void main(String[] args) {
+
+		//key : 유저의 번호
+		//value : User 객체
+		
+		HashMap<Integer, User> userList = new HashMap<>();
+		
+		User user = new User("min","min1234");
+		userList.put(1, user);
+		
+		userList.put(2,new User("kim","kim1234"));
+		
+		System.out.println(userList);
+	}
+
+}

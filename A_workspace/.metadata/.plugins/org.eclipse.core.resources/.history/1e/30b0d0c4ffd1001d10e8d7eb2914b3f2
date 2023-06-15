@@ -1,0 +1,24 @@
+package object;
+
+public class User {
+	
+	String id;
+	String pw;
+	
+	public User() {
+		super();
+	}
+
+	public User(String id, String pw) {
+		super();
+		this.id = id;
+		this.pw = pw;
+	}
+
+	@Override
+	public String toString() {
+		return "재정의 된 toString()";
+	}
+	
+	
+}

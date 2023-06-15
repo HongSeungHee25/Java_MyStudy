@@ -1,0 +1,36 @@
+package map;
+
+import java.util.HashMap;
+
+public class HashMapTest {
+
+	public static void main(String[] args) {
+		
+		//Key의 자료형 : String, Value의 자료형 : Integer
+		HashMap<String, Integer> mart = new HashMap<>();
+		
+		//추가
+		mart.put("새우깡", 1300);
+		mart.put("감자깡", 1500);
+		mart.put("포카칩", 2000);
+		mart.put("스윙칩", 1700);
+		
+		//기존에 이미 새우깡이라는 key가 존재하기 때문에
+		//Value 값이 수정된다
+		mart.put("새우깡", 3000);
+		
+		System.out.println(mart);
+		
+		//조회
+		//key값을 통해 value를 찾는다
+		System.out.println(mart.get("새우깡"));
+		
+		//삭제
+		mart.remove("스윙칩");
+		System.out.println(mart);
+		
+		//길이
+		System.out.println(mart.size());
+	}
+
+}

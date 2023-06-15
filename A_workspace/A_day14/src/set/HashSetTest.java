@@ -1,0 +1,48 @@
+package set;
+
+import java.util.HashSet;
+import java.util.Iterator;
+
+public class HashSetTest {
+
+	public static void main(String[] args) {
+
+		HashSet<String> category = new HashSet<>();
+		
+		//추가
+		//중복된 값은 추가되지 않는다
+		category.add("스릴러");
+		category.add("로맨스");
+		category.add("스릴러");
+		category.add("스릴러");
+		category.add("스릴러");
+		
+		System.out.println(category);
+		
+		//삭제
+		category.remove("스릴러");
+		System.out.println(category);
+		
+		category.add("자연과학");
+		category.add("인문학");
+		
+		for(String string : category) {
+			System.out.println(string);
+		}
+		
+		//Iterator
+		Iterator<String> iter = category.iterator();
+		
+		while(iter.hasNext()) {
+			System.out.println(iter.next());
+		}
+		
+		//포함여부
+		System.out.println(category.contains("스릴러"));
+		
+		//길이
+		System.out.println(category.size());
+		
+	}
+
+}
